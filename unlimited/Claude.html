@@ -659,13 +659,17 @@
                 max-width: 85%;
             }
             
-            /* Fix Textbox Wrapping ("How can I help you today?") */
+            /* Fix Textbox Wrapping & Nudge Button Up ("How can I help you today?") */
             #researchBtn {
                 display: none !important; /* Hide extra text to make room */
             }
             .search-input {
+                display: block !important; /* Fixes browser baseline gap */
                 padding: 14px 50px 14px 14px !important; /* Give placeholder plenty of room */
                 min-height: 50px;
+            }
+            .search-actions {
+                top: 46% !important; /* Nudges the button slightly up to the true optical center */
             }
             
             /* Fix chat view height */
